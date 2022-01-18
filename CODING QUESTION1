@@ -1,0 +1,29 @@
+package MethodRevision;
+import java.util.Scanner;
+public class Question1 {
+
+	public static void main(String[] args) {
+		/*Write a program with a method named getTotal that accepts two integers as an argument and return its sum. 
+		Call this method from main( ) and print the results.*/
+		
+		Scanner rev = new Scanner(System.in);
+		int number1,number2,number3;
+		
+		System.out.println("Enter first number: ");
+		number1 = rev.nextInt();
+		
+		System.out.println("Enter second number: ");
+		number2 = rev.nextInt();
+		
+		System.out.println("Enter third number: ");
+		number3 = rev.nextInt();
+		
+		int sum = getTotal(number1, number2, number3);
+		
+		System.out.println("Sum of three numbers: " + sum);
+	}
+	
+	public static int getTotal(int x, int y, int z) {
+		return x + y + z; 
+	}
+}
