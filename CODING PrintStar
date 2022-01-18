@@ -1,0 +1,28 @@
+package revision;
+import java.util.Scanner;
+public class printArrayInStars {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+		int x;
+		int NUM_ITEMS;
+		
+		System.out.println("Enter number of items: "); //masukkan nilai tu ada berapa
+		NUM_ITEMS = sc.nextInt();
+		int value [] = new int[NUM_ITEMS]; //nanti size array tu  akan ikut berapa number yang kita masukkan
+		
+		System.out.print("Enter all values: "); //masukkan any numbers ikut num of items
+		for(x=0; x<value.length;x++)
+		{
+			value[x]=sc.nextInt();
+		}
+
+		for (x=0;x<value.length;x++) {
+			int a = value[x]-1; // nilai star tu akan bergantung dengan value yang kita masukkan
+			for(int display=0; display<=a;display++) {
+				System.out.print("*");
+		}
+		System.out.println();
+	 }
+  }
+}
