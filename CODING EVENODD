@@ -1,0 +1,38 @@
+package MethodRevision;
+import java.util.Scanner;
+public class TestEvenOdd {
+
+	public static void main(String[] args) {
+		/* Write a method named isEven that accepts an int argument. 
+		 * The method should return true if the argument is even, or false otherwise. 
+		 * Also write a program to test your method.*/
+		Scanner rev = new Scanner (System.in);
+		
+		int number;
+		
+		System.out.println("Enter any integer:");
+		number = rev.nextInt();
+		
+		if(isOdd(number)) {
+			System.out.println("This is odd number");
+		}
+		else
+		{
+			System.out.println("This is even number");
+		 }
+		}
+	public static boolean isOdd(int n)
+	{
+		if (n % 2 != 0) 
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+			
+		}
+
+	}
+
+}
