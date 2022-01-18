@@ -1,0 +1,48 @@
+package MethodRevision;
+import java.util.Scanner;
+public class Vowel {
+
+	public static void main(String[] args) {
+	
+		Scanner rev = new Scanner(System.in);
+		String sentence;
+		
+		System.out.println("Enter your string: ");
+		sentence = rev.next();
+		
+		int count = 1;
+		int x;
+		
+		for(x = 0; x<sentence.length();x++)
+		{
+			if(isVowel(sentence.charAt(x)))
+			{
+				count++;
+			}
+		}
+		System.out.println("Number of vowels: " + count);
+
+	}
+	
+	public static boolean isVowel(char letter) {
+		switch (letter)
+		{
+		case 'a':
+		case 'e':
+		case 'i':
+		case 'o':
+		case 'u':
+		case 'A':
+		case 'E':
+		case 'I':
+		case 'O':
+		case 'U':
+			return true;
+		default:
+			return false;
+			
+			
+		}
+	}
+
+}
